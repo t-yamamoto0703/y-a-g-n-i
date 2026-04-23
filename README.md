@@ -17,4 +17,6 @@ Lubuntu 24.04.4 LTS / Chromium
 Windows 11 / Microsoft Edge, Firefox
 
 デバッグ用のコンソール出力を残していますので、必要に応じてご利用ください。
+
+## 補足
 背景画像は生成AIによって作成しています。
