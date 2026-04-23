@@ -1,0 +1,192 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  max-width: 640px;
+  min-height: 600px;
+  max-height: 960px;
+  margin-bottom: 10%;
+  align-items: center;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.text-display,
+.user-input {
+  font-size: 30px;
+  background-color: #ffffff60;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  height: 160px;
+}
+
+.message {
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.result {
+  position: absolute;
+  background-color: #80808080;
+  color: #00ff00;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(50px, 8vw, 80px);
+  z-index: 10;
+}
+
+.bg-img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+}
+
+.start-button,
+.other-games-button,
+.restart-button,
+.game-a-button,
+.game-b-button,
+.resume-game-button {
+  font-size: 18px;
+  background-color: #0a0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 30px;
+  margin-top: 15px;
+  width: 150px;
+}
+
+.start-button:disabled {
+  background-color: #888;
+  cursor: default; /*  */
+}
+
+.other-games-button {
+  margin-left: 50px;
+}
+
+.restart-button {
+  background-color: #0a0;
+}
+
+.game-a-button,
+.game-b-button,
+.resume-game-button {
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  z-index: 1999;
+}
+
+.resume-game-button {
+  margin-bottom: 50px;
+}
+.status-display {
+  color: #ffffffff;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.other-games-dialog {
+  position: absolute;
+  background-color: #88888888;
+  border-color: #888;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  width: 300px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  margin: 20px;
+  transform: translate(-57%, -50%);
+  font-size: 24px;
+  z-index: 2000;
+}
+
+.other-games-dialog-message {
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+/* =========================
+   @media:Quick Fix
+   ========================= */
+
+@media (max-height: 1200px) {
+  body {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  .text-display,
+  .user-input {
+    height: 140px;
+  }
+  .text-display {
+    font-size: 24px;
+  }
+  .bg-img {
+    display: none;
+  }
+  .status-indicator img {
+    max-width: 50px;
+  }
+  .status-indicator-value {
+    font-size: clamp(8px, 3vw, 18px);
+  }
+}
+
+/* Nest  Hub low-height smart display safety */
+@media (max-width: 1024px) and (max-height: 600px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+/* =========================
+   End of CSS:
+   ========================= */
