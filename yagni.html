@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="yagni.css" rel="stylesheet" />
+    <title>Y-A-G-N-I</title>
+    <style></style>
+  </head>
+  <body>
+    <p class="sr-only">
+      This game is not compatible with screen readers. It requires real-time Japanese text input and kanji conversion,
+      which cannot be operated reliably with assistive technologies. You may leave this page at any time.
+    </p>
+    <div class="game-container">
+      <!-- Other Games Dialog -->
+      <div class="other-games-dialog" hidden>
+        <div class="other-games-dialog-message">
+          Choose the game<br />
+          or resume game.
+        </div>
+        <button class="game-a-button">
+          <a href="../silent/index.html" target="_self" rel="noopener noreferrer"> This game is silent. </a>
+        </button>
+        <button class="game-b-button">
+          <a href="../match/index.html" target="_self" rel="noopener noreferrer"> A Little Match Girl! </a>
+        </button>
+        <button class="resume-game-button">Close Dialog</button>
+      </div>
+      <div class="result" hidden>YOU WIN<br /><button class="restart-button">RESTART</button></div>
+      <div class="text-display"></div>
+      <div>＊ ONLY JAPANESE MODE ＊</div>
+      <div class="message state-message">日本語入力モードを「オン」にしてください</div>
+      <img class="bg-img" src="Y-A-G-N-I.webp" alt="" />
+      <div class="button-container">
+        <button class="start-button" tabindex="-1">START</button>
+        <button class="other-games-button" tabindex="-1">OTHER GAMES</button>
+      </div>
+      <div class="status-display smessage">STARTボタンまたはスペースキーを押すとゲームを開始します</div>
+      <textarea class="user-input" rows="3" autocomplete="off"></textarea>
+      <div class="message">変換前・変換中を問わず1文字でも異なっている場合は背景色が変わります</div>
+      <div class="message">文字抜けや文字違い、文頭のスペース・改行にご注意ください</div>
+    </div>
+    <script src="yagni.js"></script>
+  </body>
+</html>
+<!-- End of HTML -->
