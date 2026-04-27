@@ -1,5 +1,14 @@
 # Y-A-G-N-I
 
+> **Note**  
+> This README was drafted using **Microsoft Copilot**, intentionally instructed to write in a  
+> **“Google‑engineer‑style” technical tone** as an experiment in cross‑style documentation.  
+> The content reflects the project accurately, while the writing style is part of the experiment.
+
+---
+
+# English
+
 ## Overview
 
 This project is a simple browser-based game themed around Japanese text input (IME).  
@@ -27,6 +36,15 @@ The game has been validated in the following environments:
 
 Debugging console output (F12) is intentionally left enabled.
 
+## Display Notes
+
+Depending on your system configuration, the game’s layout may not fit entirely
+within the visible area when Windows display scaling or browser zoom is set
+above 100%.
+
+- This behavior is environment‑dependent. Adjusting the zoom level or display
+scaling may improve the overall playability.
+
 ## Assets and Licensing
 
 - The background image was generated using AI.
@@ -43,10 +61,17 @@ Debugging console output (F12) is intentionally left enabled.
 
 ---
 
+> **注記**  
+> 本 README は、**Microsoft Copilot** に対して  
+> **「Google のエンジニア文体で書いてほしい」** と指示して作成したものです。  
+> 文体は実験的なものですが、内容は本プロジェクトを正確に反映しています。
+
+# 日本語
+
 ## 概要
 
 本作品は、日本語入力（IME）をテーマにしたシンプルなブラウザゲームです。  
-画面に表示された文字列を日本語で入力して進めます。
+画面に表示された文字列を、日本語入力方式を用いて入力して進めます。
 
 ## 公開ページ
 
@@ -70,7 +95,15 @@ Debugging console output (F12) is intentionally left enabled.
 
 デバッグ用のコンソール出力（F12）は意図的に残しています。
 
-## 注意事項・ライセンス
+## 画面表示について
+
+Windows の表示スケールやブラウザの拡大率が 100% を超えている場合、
+画面全体が表示領域に収まらないことがあります。
+
+- この挙動は利用環境に依存します。必要に応じて拡大率を調整すると、
+表示が安定し、操作しやすくなる場合があります。
+
+## アセットとライセンス
 
 - 背景画像は生成AIにより作成したものです。
 - ソースコードは MIT ライセンスで公開しています。  
